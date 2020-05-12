@@ -19,7 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -89,7 +89,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -124,12 +124,27 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
+            <h2 class="section-heading text-uppercase">About Me</h2>
             <h3 class="section-subheading text-muted"></h3>
           </div>
         </div>
         <div>
-          <par></par>
+          <div id="parafs">
+            <script type="text/javascript">
+              var target = $("#parafs");
+              $(function() {
+                const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10);
+                const age = getAge("1998-04-05");
+                var mytext = "I'm a ";
+                mytext += age;
+                target.prepend(mytext);
+              });
+            </script>
+            year old girl, studying Software Engineering at University of Minho, and this is my personal website.
+            <br>
+            <br>
+            Here you can find some stuff i've been doing during this 5 years of programming.       
+          </div>
         </div>
       </div>
     </section>
@@ -145,10 +160,6 @@
             <a href="https://www.facebook.com/filipa.parente.7" class="fa fa-box fa-facebook"></a>
             <span class="text-muted"></span>
             </div>
-            <div style="display: inline-block;">            
-            <a href="#" class="fa fa-box fa-snapchat-ghost"></a>
-            <span class="text-muted"></span>
-            </div> 
             <div style="display: inline-block;">            
             <a href="https://github.com/filipap/" class="fa fa-box fa-github"></a>
             <span class="text-muted"></span>
